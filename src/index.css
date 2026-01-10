@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  /* Magpie-inspired color palette */
+  /* Primary: Deep black like magpie feathers */
+  --color-magpie-black: #0a0a0a;
+  --color-magpie-charcoal: #1a1a1a;
+  --color-magpie-dark: #2d2d2d;
+  
+  /* Secondary: Clean white like magpie breast */
+  --color-magpie-white: #fafafa;
+  --color-magpie-cream: #f5f5f5;
+  --color-magpie-pearl: #e8e8e8;
+  
+  /* Accent: Iridescent blue-green like magpie wing shimmer */
+  --color-magpie-teal: #0d9488;
+  --color-magpie-cyan: #06b6d4;
+  --color-magpie-emerald: #10b981;
+  --color-magpie-iridescent: #14b8a6;
+  
+  /* Gradients for iridescent effect */
+  --color-gradient-start: #0d9488;
+  --color-gradient-mid: #06b6d4;
+  --color-gradient-end: #10b981;
+
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-magpie-white);
+  color: var(--color-magpie-black);
+  margin: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-mid), var(--color-gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-mid), var(--color-gradient-end));
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(var(--color-magpie-white), var(--color-magpie-white)) padding-box,
+              linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-mid), var(--color-gradient-end)) border-box;
+  border: 2px solid transparent;
+}
