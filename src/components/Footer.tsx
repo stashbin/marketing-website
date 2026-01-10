@@ -38,6 +38,14 @@ export default function Footer() {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link 
+                  to="/support" 
+                  className="hover:text-magpie-teal transition-colors"
+                >
+                  Support
+                </Link>
+              </li>
             </ul>
           </div>
           

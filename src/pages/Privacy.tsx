@@ -91,20 +91,6 @@ export default function Privacy() {
               policy periodically.
             </p>
           </section>
-          
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-magpie-black">Contact Us</h2>
-            <p>
-              If you have any questions about this privacy policy or StashBin's privacy 
-              practices, please contact us at:{' '}
-              <a 
-                href="mailto:support@stashbin.app" 
-                className="text-magpie-teal hover:text-magpie-cyan transition-colors"
-              >
-                support@stashbin.app
-              </a>
-            </p>
-          </section>
         </div>
       </div>
     </div>
