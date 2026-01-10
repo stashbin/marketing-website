@@ -8,7 +8,7 @@ export default function CTA() {
         </h2>
         <p className="text-lg text-magpie-pearl mb-8 max-w-2xl mx-auto">
           Download StashBin today and start saving the content that matters to you. 
-          It's free to get started.
+          Free for up to 10 items, then unlock unlimited saves for just $9.99 — one-time, forever.
         </p>
         
         <a
