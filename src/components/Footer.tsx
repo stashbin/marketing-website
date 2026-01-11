@@ -23,17 +23,18 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Links</h3>
             <ul className="space-y-2 text-magpie-pearl text-sm">
               <li>
-                <a 
-                  href="#features" 
+                <Link 
+                  to="/#features" 
                   className="hover:text-magpie-teal transition-colors"
                 >
                   Features
-                </a>
+                </Link>
               </li>
               <li>
                 <Link 
                   to="/privacy" 
                   className="hover:text-magpie-teal transition-colors"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Privacy Policy
                 </Link>
@@ -42,6 +43,7 @@ export default function Footer() {
                 <Link 
                   to="/support" 
                   className="hover:text-magpie-teal transition-colors"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Support
                 </Link>
