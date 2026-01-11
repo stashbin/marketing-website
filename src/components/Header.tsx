@@ -5,19 +5,19 @@ export default function Header() {
     <header className="bg-magpie-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-magpie-pearl">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2" onClick={() => window.scrollTo(0, 0)}>
             <div className='w-8 h-8 rounded-[28px] shadow-2xl overflow-hidden'>
               <img src="/icon.svg" alt="StashBin" className="w-full h-full" />
             </div>
-            <span className="font-bold text-xl text-magpie-black">StashBin</span>
+            <span className="hidden sm:inline font-bold text-xl text-magpie-black">StashBin</span>
           </Link>
           <nav className="flex items-center gap-6">
-            <a 
-              href="#features" 
+            <Link 
+              to="/#features" 
               className="text-magpie-dark hover:text-magpie-teal transition-colors font-medium"
             >
               Features
-            </a>
+            </Link>
             <a
               href="https://apps.apple.com/app/stashbin"
               target="_blank"
